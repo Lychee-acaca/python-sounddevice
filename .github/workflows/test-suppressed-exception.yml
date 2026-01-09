@@ -32,4 +32,4 @@ jobs:
       - name: Run tests
         shell: cmd
         run: |
-          python -c "import sounddevice; 1 / 0" 2>&1
+          python -u -c "import sounddevice; 1 / 0"

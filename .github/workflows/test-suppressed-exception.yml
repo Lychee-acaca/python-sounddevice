@@ -31,4 +31,5 @@ jobs:
           python -m pip install .
       - name: Run tests
         run: |
-          "C:\Users\runneradmin\AppData\Local\Programs\Python\Python39\pythonw.exe" -c "import sounddevice; 1 / 0"
+          shell: cmd
+          "%pythonLocation%\pythonw.exe" -c "import sounddevice; 1 / 0"
